@@ -17,7 +17,7 @@ export const PodcastFeedContainer = () => {
     try {
       const parser = new Parser<RSSFeed>()
       const parsedRss: RSSFeed = await parser.parseURL(
-        'https://anchor.fm/s/5c60f854/podcast/rss'
+        '/s/5c60f854/podcast/rss'
       )
       if (parsedRss) {
         setFeed(parsedRss)
