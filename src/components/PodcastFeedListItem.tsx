@@ -1,6 +1,13 @@
-import { Avatar, ListItemAvatar, ListItemButton, ListItemText } from '@mui/material'
+import {
+  Avatar,
+  IconButton,
+  ListItemAvatar,
+  ListItemButton,
+  ListItemText,
+} from '@mui/material'
 
 import { RSSFeedItem } from '../types'
+import { MoreVert } from '@mui/icons-material'
 
 interface IPodcastFeedListItem {
   title: string
@@ -31,6 +38,9 @@ export const PodcastFeedListItem = ({
         />
       </ListItemAvatar>
       <ListItemText primary={episode.title} secondary={title} />
+      <IconButton>
+        <MoreVert />
+      </IconButton>
     </ListItemButton>
   )
 }
