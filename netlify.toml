@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/s/:id/podcast/rss"
+  to = "https://anchor.fm/s/:id/podcast/rss"
+  status = 200
+  force = true
